@@ -7,7 +7,7 @@
         const cart = document.body.querySelector('.cart');
         
         function getData() {
-                fetch('/data.js')
+                fetch('/data.json')
                 .then(response => response.json())
                 .then(data => {
                         tours = data.results;
