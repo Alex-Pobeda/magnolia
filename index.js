@@ -49,4 +49,4 @@
         
         cart.addEventListener('click', showPopup);
         
-        document.addEventListener('DOMContentLoaded', createToursList(tours));
+        document.addEventListener('DOMContentLoaded', getData(), createToursList(tours));
