@@ -7,13 +7,13 @@
         const cart = document.body.querySelector('.cart');
         
         function getData() {
-                fetch('/data.json')
-                .then(response => response.json())
-                .then(data => {
-                        tours = data.results;
-                 })
-                .catch(error => console.error(error))
-                createToursList(tours)
+          fetch('/data.json')
+            .then(response => response.json())
+            .then(data => {
+              tours.push(data);
+              createToursList(tours);
+            })
+            .catch(error => console.error(error));
         }
 
         function createTourCard(tour) {
