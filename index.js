@@ -11,8 +11,9 @@
                 .then(response => response.json())
                 .then(data => {
                         tours = data
-                 })
+                 }).
                 .catch(error => console.error(error))
+                createToursList(tours)
         }
 
         function createTourCard(tour) {
@@ -49,4 +50,4 @@
         
         cart.addEventListener('click', showPopup);
         
-        document.addEventListener('DOMContentLoaded', getData(), createToursList(tours));
+        document.addEventListener('DOMContentLoaded', getData());
