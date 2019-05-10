@@ -1,4 +1,4 @@
-const tours = [
+[
         {
             "img": "https://scdn3.thomascook.com/crop?imageUrl=http://magnolia.production.thomascook.io/wcms/dam/tcuk/new/campaigns/peaks/merchblocks/getawaymerchv7.jpg&maxWidth=300&maxHeight=0",
             "title": "Tenerife",
