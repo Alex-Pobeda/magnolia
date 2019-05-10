@@ -6,7 +6,7 @@ const buyButton = document.body.querySelector('.container');
 const cart = document.body.querySelector('.cart');
 
 getData = () => {
-  fetch('https://github.com/Alex-Pobeda/magnolia/blob/gh-pages/data.json')
+  fetch('/data.json')
     .then(response => {
       if (response.ok) return response.json();
       throw new Error('Error fetching data');
