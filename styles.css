@@ -1,0 +1,162 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&subset=latin-ext');
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+   padding: 5px;
+   font-family: Source Sans Pro, sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 185px;
+    background: url(https://scdn.thomascook.com/oneweb/images/logos/uk.png) center center no-repeat;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    list-style: none;
+}
+
+.navbar_item {
+    border-left: 1px solid #eee;
+}
+
+.navbar_item:hover {
+    background-color: #ffd924;
+}
+
+.navbar_item a {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+.slider {
+    height: 30vh;
+    background: url(https://scdn3.thomascook.com/crop?imageUrl=http://magnolia.production.thomascook.io/wcms/dam/tcuk/new/campaigns/peaks/hero/bankholhero.jpg&maxWidth=1600&maxHeight=0) center center no-repeat;
+}
+
+.cart {
+    background-color: #fea907;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    min-height: 40px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart .popuptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -50%;
+  left: -50%;
+  margin-left: -100px;
+}
+
+.cart .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tourCard {
+    margin: 0 10px 10px 0;
+    width: 300px;
+}
+
+.tourCard>h3 {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: sandybrown;
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.buyButton {
+    background: #6bd4a9;
+    color: white;
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.buyButton:hover {
+    background: white;
+    color: #6bd4a9;
+    border: 1px solid #6bd4a9;
+}
+
+.buyButton:active {
+    background: #288a61;
+    color: white;
+}
+
+.tourCard:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks_column {
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.navLinks_column>h4 {
+    color: white;
+}
+
+.navLink {
+    list-style: none;
+}
+
+.navLink a {
+    color: white;
+    text-decoration: none;
+}
+
+.navLink a:hover {
+    text-decoration: underline;
+}
