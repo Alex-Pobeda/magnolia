@@ -1,8 +1,20 @@
         let toursCount = 0;
+        const tours = [];
         const toursSelected = [];
         
         const count = document.body.querySelector('.count');
+        const buyButton = document.body.querySelector('.container');
+        const cart = document.body.querySelector('.cart');
         
+        function getData() {
+                fetch('/data.js')
+                .then(response => response.json())
+                .then(data => {
+                        tours = data
+                 })
+                .catch(error => console.error(error))
+        }
+
         function createTourCard(tour) {
             const container = document.body.querySelector('.container');
             const tourCard = document.createElement('div');
@@ -27,10 +39,7 @@
             toursSelected.push(target.previousElementSibling.alt);
         };
         
-        const buyButton = document.body.querySelector('.container');
         buyButton.addEventListener('click', buyTour);
-        
-        const cart = document.body.querySelector('.cart');
         
         function showPopup() {
             const popup = document.body.querySelector('.popuptext');
