@@ -10,7 +10,7 @@
                 fetch('/data.js')
                 .then(response => response.json())
                 .then(data => {
-                        tours = data.result;
+                        tours = data.results;
                  })
                 .catch(error => console.error(error))
                 createToursList(tours)
